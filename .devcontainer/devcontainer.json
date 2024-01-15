@@ -1,0 +1,24 @@
+{
+    "name": "all-in-one",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:bullseye",
+    "init": true,
+    "remoteUser": "vscode",
+    "features": {
+        "ghcr.io/devcontainers/features/rust:1": {
+            "version": "latest",
+            "profile": "minimal"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "installOhMyZsh": true,
+            "upgradePackages": true,
+            "username": "vscode",
+            "userUid": "automatic",
+            "userGid": "automatic"
+        }
+    },
+    "postCreateCommand": "cargo install wasm-pack"
+}

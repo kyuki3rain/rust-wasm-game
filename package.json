@@ -1,0 +1,20 @@
+{
+  "name": "rust-game",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:wasm": "wasm-pack build --target web",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "vite-plugin-top-level-await": "^1.4.1",
+    "vite-plugin-wasm": "^3.3.0"
+  }
+}
