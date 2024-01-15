@@ -19,3 +19,9 @@ console_error_panic_hook = "0.1.6"
 
 [package.metadata.wasm-pack.profile.release]
 wasm-opt = false
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.40"
+futures = "0.3.30"
+js-sys = "0.3.22"
+wasm-bindgen-futures = "0.4.40"

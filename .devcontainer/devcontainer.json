@@ -1,6 +1,9 @@
 {
     "name": "all-in-one",
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:bullseye",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": { }
+    },
     "init": true,
     "remoteUser": "vscode",
     "features": {
