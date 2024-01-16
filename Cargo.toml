@@ -12,7 +12,7 @@ wee_alloc = "0.4.5"
 
 [dependencies.web-sys]
 version = "0.3.67"
-features = ["console"]
+features = ["console", "Window", "Document", "HtmlCanvasElement", "CanvasRenderingContext2d", "Element"]
 
 [target."cfg(debug_assertions)".dependencies]
 console_error_panic_hook = "0.1.6"
